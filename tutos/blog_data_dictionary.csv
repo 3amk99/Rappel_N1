@@ -1,0 +1,23 @@
+interface,name,meaning,type,nullable,countable,exemple
+article,IdArticle ,id,int,no,no,5
+article,title,title,varchar,no,no,the will of oz
+article,content,article content,text,no,no,long ago ...
+article,img,thumbnail,varchar,no,no,url
+article,date_of_creation,date of creation,date,no,no,21-03-2020
+article,date_of_publication,date of publication,date,yes,no,21-03-2021
+article,status,public / draft,enum,no,no,draft
+article,read time,reading time,int,yes,yes,5 min
+author,author name,nanme author,varchar,no,no,Israa
+author,author last name,last name author,varchar,no,no,Israa
+author,author complet name,complet name author,varchar,yes,yes,Israa israa
+author,author_creation_date,date_of_creation,varchar,no,no,21-13-3
+author,profilepic,profile picture,varchar,yes,no,url
+author,email,email,varchar,no,no,tst@gmail.ocm
+author,password,password,varchar,no,no,2123
+category,name,category name,varchar,no,no,maths
+category,color,hexdec of a collor,varchar,yes(grey),no,#23134
+category,logo,category logo,varchar,yes(pen),no,url
+article,IDnextArticle,next article,int,yes,yes,tster
+article,IDpreArticle,pre article,int,yes,yes,the mort
+article,total Views,total views,int,yes,yes,5k
+article,Views,views,int,yes,yes,5
