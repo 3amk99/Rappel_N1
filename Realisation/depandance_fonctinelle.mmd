@@ -1,0 +1,29 @@
+erDiagram
+    MEMBRE {
+        int id_membre PK
+        varchar nom_membre
+    }
+
+    DOMAINE {
+        int id_domaine PK
+        varchar libelle_domaine
+    }
+
+    ENTREPRISE {
+        int id_entreprise PK
+        varchar nom_entreprise
+    }
+
+    PUBLICATION {
+        int id_publication PK
+        varchar titre_pub
+        text contenu_pub
+        datetime date_pub
+        int membre_id FK
+        int domaine_id FK
+        int entreprise_id FK
+    }
+
+    MEMBRE ||--o{ PUBLICATION : writes
+    DOMAINE ||--o{ PUBLICATION : classifies
+    ENTREPRISE ||--o{ PUBLICATION : associated_with

@@ -1,0 +1,31 @@
+Role & Goal: You are a senior web development assistant.
+Help me build a complete, clean, and functional CRUD mini-web application in PHP (using PDO), 
+HTML, and CSS . The project type is a Professional Social Network (similar to a mini-LinkedIn).
+
+Database Structure Requirements:
+
+membre (id_membre, nom_membre)
+
+domaine (id_domaine, libelle_domaine)
+
+entreprise (id_entreprise, nom_entreprise)
+
+publication (id_publication, titre_pub, contenu_pub, date_pub, membre_id, domaine_id, entreprise_id) 
+with foreign keys pointing to the respective tables.
+
+Page Requirements:
+
+Add Page (add.php): A form allowing entry of publication details, 
+with dropdown menus populated dynamically from the membre, domaine, 
+and entreprise tables.
+
+Publication Page (publications.php): A table listing all existing publications, 
+displaying joined data (author name, domain name, company name, title, content, date), 
+featuring an Edit button and a Delete button next to each item row.
+
+Edit Page (edit.php): A pre-filled form allowing modification of an existing 
+publication record in the database.
+
+Technical Stack: Clean procedural PHP with PDO for database queries, 
+responsive HTML and CSS styling with a modern color palette, and input sanitization to 
+ensure data integrity.
