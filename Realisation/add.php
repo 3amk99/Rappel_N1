@@ -19,7 +19,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 // Fetch lists for dropdowns
 $membres = $pdo->query("SELECT * FROM membre")->fetchAll(PDO::FETCH_ASSOC);
-domaines = $pdo->query("SELECT * FROM domaine")->fetchAll(PDO::FETCH_ASSOC);
+$domaines = $pdo->query("SELECT * FROM domaine")->fetchAll(PDO::FETCH_ASSOC);
 $entreprises = $pdo->query("SELECT * FROM entreprise")->fetchAll(PDO::FETCH_ASSOC);
 ?>
 
